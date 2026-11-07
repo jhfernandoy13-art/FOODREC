@@ -1,0 +1,5 @@
+Modelo,Cuota_popular,Novedad_bits,Diversidad_ingredientes,Afinidad_historial,Listas_sesgo_alto_pct,Listas_sesgo_bajo_pct,HR@10,NDCG@10,Cobertura@10
+Item-Item,0.2275,10.0818,0.9655,0.1267,19.2388,75.0575,0.0109,0.0059,0.6058
+Popularidad,1.0,4.7057,0.9703,0.1275,100.0,0.0,0.024,0.0116,0.0013
+Reglas + popularidad,1.0,4.7127,0.9714,0.1255,100.0,0.0,0.0239,0.0115,0.0013
+SASRec,0.9906,5.1755,0.9553,0.1408,99.04,0.1965,0.0237,0.012,0.0118

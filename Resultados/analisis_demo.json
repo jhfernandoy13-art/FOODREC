@@ -1,0 +1,114 @@
+{
+ "Repostería de fin de semana": {
+  "texto": "* **Lectura del historial:** La cocina registrada muestra una fuerte inclinación hacia la repostería y la panadería casera, con categorías dominantes de Postres y Panes. Las preparaciones tienen tiempos moderados a largos (mediana de 70.0 minutos) e incluyen ingredientes básicos de repostería como harina, mantequilla, azúcar y huevos. Los patrones calculados indican que no hay un cambio de gusto marcado (ambas mitades del historial se inclinan hacia los postres) y hay una preferencia absoluta por recetas populares (cuota de populares del 1.0).\n* **Por qué la lista calza:** El Transformer prestó mayor atención a recetas como [H3] (Bakery style chewy chocolate chip cookies) y [H4] (The cheesecake factory pumpkin cheesecake by todd wilbur). Esto se refleja en cómo algunas recomendaciones conectan con el historial: por ejemplo, [S8] (Kittencal's 5 minute cinnamon flop brunch cake) y [S10] (Crumb topped banana muffins) guardan relación directa con el historial a través de ingredientes y categorías similares a [H3] y [H2]. Sin embargo, el modelo también introduce un giro hacia platos principales ([S1], [S2]) a pesar de la homogeneidad repostera del historial.\n* **Contraste con la línea base:** Ambas listas coinciden en varias sugerencias exactas, como [S2] (equivalente a [B8]) y [S10] (equivalente a [B3]). No obstante, la línea base mantiene un perfil más conservador y cercano al historial al incluir una mayor proporción de postres ([B1], [B2], [B5], [B7]), mientras que el Transformer diversifica más hacia platos salados.\n* **Auditoría de sesgo:** Tanto el modelo como la línea base muestran una dependencia total de las recetas más reseñadas, priorizando exclusivamente opciones de alta popularidad.\n  `AUDITORIA: nivel de sesgo de popularidad = alto`\n  `AUDITORIA_BASE: nivel de sesgo de popularidad = alto`\n* **Límites:** Asociación no es causalidad; predecir la siguiente receta no explica por qué la persona la elegiría. Además, las interacciones son simplemente reseñas y no constituyen una prueba de que la persona realmente haya cocinado la receta, y los pesos de atención del modelo no deben interpretarse como una explicación causal.",
+  "uso": {
+   "texto": "* **Lectura del historial:** La cocina registrada muestra una fuerte inclinación hacia la repostería y la panadería casera, con categorías dominantes de Postres y Panes. Las preparaciones tienen tiempos moderados a largos (mediana de 70.0 minutos) e incluyen ingredientes básicos de repostería como harina, mantequilla, azúcar y huevos. Los patrones calculados indican que no hay un cambio de gusto marcado (ambas mitades del historial se inclinan hacia los postres) y hay una preferencia absoluta por recetas populares (cuota de populares del 1.0).\n* **Por qué la lista calza:** El Transformer prestó mayor atención a recetas como [H3] (Bakery style chewy chocolate chip cookies) y [H4] (The cheesecake factory pumpkin cheesecake by todd wilbur). Esto se refleja en cómo algunas recomendaciones conectan con el historial: por ejemplo, [S8] (Kittencal's 5 minute cinnamon flop brunch cake) y [S10] (Crumb topped banana muffins) guardan relación directa con el historial a través de ingredientes y categorías similares a [H3] y [H2]. Sin embargo, el modelo también introduce un giro hacia platos principales ([S1], [S2]) a pesar de la homogeneidad repostera del historial.\n* **Contraste con la línea base:** Ambas listas coinciden en varias sugerencias exactas, como [S2] (equivalente a [B8]) y [S10] (equivalente a [B3]). No obstante, la línea base mantiene un perfil más conservador y cercano al historial al incluir una mayor proporción de postres ([B1], [B2], [B5], [B7]), mientras que el Transformer diversifica más hacia platos salados.\n* **Auditoría de sesgo:** Tanto el modelo como la línea base muestran una dependencia total de las recetas más reseñadas, priorizando exclusivamente opciones de alta popularidad.\n  `AUDITORIA: nivel de sesgo de popularidad = alto`\n  `AUDITORIA_BASE: nivel de sesgo de popularidad = alto`\n* **Límites:** Asociación no es causalidad; predecir la siguiente receta no explica por qué la persona la elegiría. Además, las interacciones son simplemente reseñas y no constituyen una prueba de que la persona realmente haya cocinado la receta, y los pesos de atención del modelo no deben interpretarse como una explicación causal.",
+   "tokens_entrada": 4832,
+   "tokens_salida": 519,
+   "latencia_s": 2.058,
+   "proveedor": "gemini",
+   "modelo": "gemini-3.5-flash-lite",
+   "costo_usd_referencial": 0.0
+  },
+  "validacion": {
+   "codigos_citados": [
+    "B1",
+    "B2",
+    "B3",
+    "B5",
+    "B7",
+    "B8",
+    "H2",
+    "H3",
+    "H4",
+    "S1",
+    "S10",
+    "S2",
+    "S8"
+   ],
+   "codigos_inventados": [],
+   "posible_reordenamiento": [],
+   "nivel_auditoria_real": "alto",
+   "nivel_auditoria_declarado": "alto",
+   "auditoria_coincide": true,
+   "nivel_base_real": "alto",
+   "nivel_base_declarado": "alto",
+   "auditoria_base_coincide": true,
+   "ok": true
+  }
+ },
+ "Cambio de gusto: de dulces a saludable": {
+  "texto": "Aquí tienes el análisis culinario y de datos de las recomendaciones de FoodRec:\n\n* **Lectura del historial:** El recorrido muestra un claro cambio de gusto: la primera mitad está dominada por postres dulces (como [H1], [H2], [H3] y [H4]), mientras que la segunda mitad transita hacia preparaciones más frescas, granos y platos salados como [H5], [H6], [H7] y [H8]. Todas las recetas del historial son populares (cuota de 1,0), con tiempos que varían desde preparaciones rápidas de 10 minutos hasta opciones más elaboradas de más de 100 minutos.\n* **Por qué la lista calza:** \n  * [S1] Kittencal's italian melt in your mouth meatballs conecta con la ensalada [H5] mediante ingredientes y un perfil salado complementario.\n  * [S3] Delicious chicken pot pie dialoga con la sopa de verduras [H8] por su espíritu reconfortante de guiso y uso de vegetales.\n  * [S6] Kittencal's 5 minute cinnamon flop brunch cake retoma el gusto temprano por los postres y panes dulces visto en [H4].\n  * [S8] Banana banana bread entronca directamente con el gusto inicial por los brownies y pasteles de [H1].\n  El Transformer prestó mayor atención a las recetas [H1], [H3] y [H4], lo que explica la reaparición de notas dulces y caseras en la lista.\n* **Contraste con la línea base:** Ambas listas coinciden únicamente en la receta [S6] = [B5] (*Kittencal's 5 minute cinnamon flop brunch cake*). Sin embargo, la línea base se inclina más hacia categorías variadas y postres directos ([B1], [B10]), mientras que el Transformer diversifica más hacia platos principales ([S1], [S2], [S3], [S5], [S7], [S9], [S10]).\n* **Auditoría de sesgo:** Ambas estrategias muestran una dependencia total de recetas muy reseñadas.\n  `AUDITORIA: nivel de sesgo de popularidad = alto`\n  `AUDITORIA_BASE: nivel de sesgo de popularidad = alto`\n* **Límites:** Asociación no es causalidad; predecir la siguiente receta no explica por qué la persona la elegiría. Además, hay que recordar que las interacciones son reseñas y no una prueba directa de que la persona efectivamente cocinó la receta, y los pesos de atención del modelo no constituyen una explicación causal de la elección.",
+  "uso": {
+   "texto": "Aquí tienes el análisis culinario y de datos de las recomendaciones de FoodRec:\n\n* **Lectura del historial:** El recorrido muestra un claro cambio de gusto: la primera mitad está dominada por postres dulces (como [H1], [H2], [H3] y [H4]), mientras que la segunda mitad transita hacia preparaciones más frescas, granos y platos salados como [H5], [H6], [H7] y [H8]. Todas las recetas del historial son populares (cuota de 1,0), con tiempos que varían desde preparaciones rápidas de 10 minutos hasta opciones más elaboradas de más de 100 minutos.\n* **Por qué la lista calza:** \n  * [S1] Kittencal's italian melt in your mouth meatballs conecta con la ensalada [H5] mediante ingredientes y un perfil salado complementario.\n  * [S3] Delicious chicken pot pie dialoga con la sopa de verduras [H8] por su espíritu reconfortante de guiso y uso de vegetales.\n  * [S6] Kittencal's 5 minute cinnamon flop brunch cake retoma el gusto temprano por los postres y panes dulces visto en [H4].\n  * [S8] Banana banana bread entronca directamente con el gusto inicial por los brownies y pasteles de [H1].\n  El Transformer prestó mayor atención a las recetas [H1], [H3] y [H4], lo que explica la reaparición de notas dulces y caseras en la lista.\n* **Contraste con la línea base:** Ambas listas coinciden únicamente en la receta [S6] = [B5] (*Kittencal's 5 minute cinnamon flop brunch cake*). Sin embargo, la línea base se inclina más hacia categorías variadas y postres directos ([B1], [B10]), mientras que el Transformer diversifica más hacia platos principales ([S1], [S2], [S3], [S5], [S7], [S9], [S10]).\n* **Auditoría de sesgo:** Ambas estrategias muestran una dependencia total de recetas muy reseñadas.\n  `AUDITORIA: nivel de sesgo de popularidad = alto`\n  `AUDITORIA_BASE: nivel de sesgo de popularidad = alto`\n* **Límites:** Asociación no es causalidad; predecir la siguiente receta no explica por qué la persona la elegiría. Además, hay que recordar que las interacciones son reseñas y no una prueba directa de que la persona efectivamente cocinó la receta, y los pesos de atención del modelo no constituyen una explicación causal de la elección.",
+   "tokens_entrada": 4996,
+   "tokens_salida": 580,
+   "latencia_s": 2.135,
+   "proveedor": "gemini",
+   "modelo": "gemini-3.5-flash-lite",
+   "costo_usd_referencial": 0.0
+  },
+  "validacion": {
+   "codigos_citados": [
+    "B1",
+    "B10",
+    "B5",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7",
+    "H8",
+    "S1",
+    "S10",
+    "S2",
+    "S3",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S9"
+   ],
+   "codigos_inventados": [],
+   "posible_reordenamiento": [],
+   "nivel_auditoria_real": "alto",
+   "nivel_auditoria_declarado": "alto",
+   "auditoria_coincide": true,
+   "nivel_base_real": "alto",
+   "nivel_base_declarado": "alto",
+   "auditoria_base_coincide": true,
+   "ok": true
+  }
+ },
+ "Arranque en frío": {
+  "texto": "Como analista de FoodRec, aquí tienes la revisión de los datos actuales:\n\n* **Lectura del historial:** La persona se encuentra en modo de arranque en frío, por lo que no hay historial disponible en el sistema.\n* **Por qué la lista calza:** Al no registrarse interacciones previas, el Transformer no pudo activarse. Por esta razón, se muestra una lista basada estrictamente en la popularidad global de las recetas en el conjunto de entrenamiento. En esta selección se destacan platos principales reconfortantes y de larga cocción como [P1] To die for crock pot roast (545 minutos) y [P2] Crock pot chicken with black beans cream cheese (243 minutos), junto con opciones más rápidas como [P4] Creamy cajun chicken pasta (25 minutos) y un postre con [P3] Whatever floats your boat brownies (35 minutos). Para obtener una lista verdaderamente personalizada, la persona tendría que interactuar (dejar reseñas) con varias recetas para que el sistema aprenda sus preferencias culinarias.\n* **Contraste con la línea base:** No tengo ese dato.\n* **Auditoría de sesgo:**\n  `AUDITORIA: nivel de sesgo de popularidad = alto`\n  `AUDITORIA_BASE: nivel de sesgo de popularidad = alto`\n* **Límites:** Asociación no es causalidad; predecir la siguiente receta no explica por qué la persona la elegiría. Además, las interacciones son reseñas y no prueba de que realmente se cocinó la receta.",
+  "uso": {
+   "texto": "Como analista de FoodRec, aquí tienes la revisión de los datos actuales:\n\n* **Lectura del historial:** La persona se encuentra en modo de arranque en frío, por lo que no hay historial disponible en el sistema.\n* **Por qué la lista calza:** Al no registrarse interacciones previas, el Transformer no pudo activarse. Por esta razón, se muestra una lista basada estrictamente en la popularidad global de las recetas en el conjunto de entrenamiento. En esta selección se destacan platos principales reconfortantes y de larga cocción como [P1] To die for crock pot roast (545 minutos) y [P2] Crock pot chicken with black beans cream cheese (243 minutos), junto con opciones más rápidas como [P4] Creamy cajun chicken pasta (25 minutos) y un postre con [P3] Whatever floats your boat brownies (35 minutos). Para obtener una lista verdaderamente personalizada, la persona tendría que interactuar (dejar reseñas) con varias recetas para que el sistema aprenda sus preferencias culinarias.\n* **Contraste con la línea base:** No tengo ese dato.\n* **Auditoría de sesgo:**\n  `AUDITORIA: nivel de sesgo de popularidad = alto`\n  `AUDITORIA_BASE: nivel de sesgo de popularidad = alto`\n* **Límites:** Asociación no es causalidad; predecir la siguiente receta no explica por qué la persona la elegiría. Además, las interacciones son reseñas y no prueba de que realmente se cocinó la receta.",
+   "tokens_entrada": 2222,
+   "tokens_salida": 334,
+   "latencia_s": 1.458,
+   "proveedor": "gemini",
+   "modelo": "gemini-3.5-flash-lite",
+   "costo_usd_referencial": 0.0
+  },
+  "validacion": {
+   "codigos_citados": [
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+   ],
+   "codigos_inventados": [],
+   "posible_reordenamiento": [],
+   "nivel_auditoria_real": "alto",
+   "nivel_auditoria_declarado": "alto",
+   "auditoria_coincide": true,
+   "nivel_base_real": null,
+   "nivel_base_declarado": "alto",
+   "auditoria_base_coincide": false,
+   "ok": true
+  }
+ }
+}

@@ -1,0 +1,6 @@
+tipo,llamadas,tokens_entrada_media,tokens_salida_media,latencia_media_s,latencia_p95_s,costo_usd_total
+analisis_30_casos,30,5210.7,512.8667,4.0013,9.1111,0.0
+analisis_inicial,3,4016.6667,477.6667,1.8837,2.1273,0.0
+analisis_prueba,1,2222.0,365.0,1.683,1.683,0.0
+analisis_reconsulta,1,5007.0,450.0,5.206,5.206,0.0
+chat_prueba,5,4565.4,61.2,0.7972,0.8532,0.0

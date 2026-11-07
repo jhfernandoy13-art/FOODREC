@@ -1,0 +1,12 @@
+# Dependencias de la app (Streamlit Community Cloud).
+# PyTorch en versión CPU: más liviano; la app no entrena ni usa GPU.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+streamlit>=1.50
+pandas>=2.2
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+pyarrow>=15
+altair>=5
+requests>=2.31

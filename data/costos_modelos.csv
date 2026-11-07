@@ -1,0 +1,5 @@
+Modelo,Dispositivo,Ajuste_train_s,Validacion_s,Inferencia_promedio_ms_usuario,Parametros_gradiente,Archivo_MB
+Popularidad,CPU,0.045242,,0.004402,0,0.333451
+Item-Item,CPU,0.019274,,3.878127,0,1.19187
+Reglas + popularidad,CPU,4.478797,,0.011882,0,0.337237
+SASRec,cuda,16.462764,5.278962,0.034074,2692736,10.775901

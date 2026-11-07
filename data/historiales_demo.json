@@ -1,0 +1,88 @@
+{
+ "Repostería de fin de semana": [
+  {
+   "item_idx": 5086,
+   "receta": "Whatever floats your boat brownies"
+  },
+  {
+   "item_idx": 3839,
+   "receta": "Banana banana bread"
+  },
+  {
+   "item_idx": 12835,
+   "receta": "Bakery style chewy chocolate chip cookies"
+  },
+  {
+   "item_idx": 7470,
+   "receta": "The cheesecake factory pumpkin cheesecake by todd wilbur"
+  },
+  {
+   "item_idx": 12347,
+   "receta": "Tsr 1993 version of cinnabon cinnamon rolls by todd wilbur"
+  },
+  {
+   "item_idx": 4868,
+   "receta": "Yummy crunchy apple pie"
+  }
+ ],
+ "Olla lenta y comida casera": [
+  {
+   "item_idx": 4110,
+   "receta": "To die for crock pot roast"
+  },
+  {
+   "item_idx": 889,
+   "receta": "Slow cooker cheesy chicken"
+  },
+  {
+   "item_idx": 9250,
+   "receta": "Awesome slow cooker pot roast"
+  },
+  {
+   "item_idx": 11841,
+   "receta": "The best chili you will ever taste"
+  },
+  {
+   "item_idx": 8799,
+   "receta": "Yes virginia there is a great meatloaf"
+  },
+  {
+   "item_idx": 12839,
+   "receta": "Mahogany beef stew"
+  }
+ ],
+ "Cambio de gusto: de dulces a saludable": [
+  {
+   "item_idx": 5086,
+   "receta": "Whatever floats your boat brownies"
+  },
+  {
+   "item_idx": 29079,
+   "receta": "Vanilla buttercream frosting from sprinkles cupcakes"
+  },
+  {
+   "item_idx": 5166,
+   "receta": "Fudge crinkles a great 4 ingredient cake mix cookie"
+  },
+  {
+   "item_idx": 7470,
+   "receta": "The cheesecake factory pumpkin cheesecake by todd wilbur"
+  },
+  {
+   "item_idx": 10928,
+   "receta": "Kittencal's famous greek salad"
+  },
+  {
+   "item_idx": 2064,
+   "receta": "Quinoa toasted"
+  },
+  {
+   "item_idx": 15692,
+   "receta": "Thai grilled chicken thighs"
+  },
+  {
+   "item_idx": 7625,
+   "receta": "Garden vegetable soup"
+  }
+ ]
+}

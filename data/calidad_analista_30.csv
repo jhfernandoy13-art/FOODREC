@@ -1,0 +1,10 @@
+,valor
+Casos analizados,30.0
+Sin ítems inventados (%),100.0
+Sin reordenar (%),100.0
+Nivel de sesgo SASRec correcto (%),100.0
+Nivel de sesgo línea base correcto (%),100.0
+Advierte sesgo cuando es alto (%),100.0
+Menciona límites causales (%),100.0
+Casos con sesgo alto en SASRec (auditor),29.0
+Casos con sesgo bajo en la línea base (auditor),25.0
